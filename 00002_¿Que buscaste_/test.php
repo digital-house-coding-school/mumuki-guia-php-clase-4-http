@@ -3,8 +3,9 @@ public function testBusquedaRemeras(): void {
     "busqueda" => "Remeras"
   ];
   
-  $resultado = strtolower($this->busqueda());
+  $resultado = $this->busqueda();
   $this->assertTrue(is_string($resultado), "La función busqueda no esta devolviendo un string...");
+  $resultado = strtolower($resultado);
   $this->assertTrue($resultado == "el termino buscado es remeras", "La prueba falla al ingresar a http://digitalcommerce.com/buscador.php?busqueda=Remeras");
 }
 
