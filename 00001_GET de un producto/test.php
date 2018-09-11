@@ -1,4 +1,4 @@
-public function test1(): void {
+public function testProducto32(): void {
   $_GET = [
     "id" => 32
   ];
