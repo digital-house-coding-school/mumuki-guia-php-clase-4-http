@@ -1,4 +1,4 @@
-El usuario ingresa en una URL del estilo de `http://digitalcommerce.com/producto?id=32`
+El usuario ingresa en una URL del estilo de `http://digitalcommerce.com/producto.php?id=32`
 
 Naturalmente, en vez del número 32 podría venir cualquier otro.
 

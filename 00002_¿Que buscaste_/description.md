@@ -1,0 +1,1 @@
+Ahora el usuario entra en `http://digitalcommerce.com/`
