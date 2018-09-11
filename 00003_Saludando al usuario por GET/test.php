@@ -5,8 +5,8 @@ public function testWalterWhite(): void {
   ];
   $resultado = $this->saludar();
   $this->assertTrue(is_string($resultado), "La función busqueda no esta devolviendo un string...");
-  $resultado = strtolower($resultado);
-  $this->assertTrue($resultado == "hola walter white", "El resultado no es el esperado cuando la URL es http://digitalcommerce.com/saludar.php?nombre=Walter&apellido=White. Se esperaba 'Hola Walter White' y se recibió '$resultado'");
+  $resultadoF = strtolower($resultado);
+  $this->assertTrue($resultadoF == "hola walter white", "El resultado no es el esperado cuando la URL es http://digitalcommerce.com/saludar.php?nombre=Walter&apellido=White. Se esperaba 'Hola Walter White' y se recibió '$resultado'");
 }
 
 public function testJessePinkman(): void {
@@ -16,8 +16,8 @@ public function testJessePinkman(): void {
   ];
   $resultado = $this->saludar();
   $this->assertTrue(is_string($resultado), "La función busqueda no esta devolviendo un string...");
-  $resultado = strtolower($resultado);
-  $this->assertTrue($resultado == "hola jesse pinkman", "El resultado no es el esperado cuando la URL es http://digitalcommerce.com/saludar.php?nombre=Jesse&apellido=Pinkman. Se esperaba 'Hola Jesse Pinkman' y se recibió '$resultado'");
+  $resultadoF = strtolower($resultado);
+  $this->assertTrue($resultadoF == "hola jesse pinkman", "El resultado no es el esperado cuando la URL es http://digitalcommerce.com/saludar.php?nombre=Jesse&apellido=Pinkman. Se esperaba 'Hola Jesse Pinkman' y se recibió '$resultado'");
 }
 
 public /*...content...*/
