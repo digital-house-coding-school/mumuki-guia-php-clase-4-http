@@ -20,4 +20,16 @@ public function testBusquedaPantalones(): void {
   $this->assertTrue($resultado == "el termino buscado es pantalones", "La prueba falla al ingresar a http://digitalcommerce.com/buscador.php?busqueda=Pantalones");
 }
 
+public function testBusquedaPantalonesPorFecha(): void {
+  $_GET = [
+    "busqueda" => "Pantalones",
+    "ordenar" => "Fecha"
+  ];
+  
+  $resultado = $this->busqueda();
+  $this->assertTrue(is_string($resultado), "La función busqueda no esta devolviendo un string...");
+  $resultado = strtolower($resultado);
+  $this->assertTrue($resultado == "el termino buscado es pantalones ordenado por fecha", "La prueba falla al ingresar a http://digitalcommerce.com/buscador.php?busqueda=Pantalones&ordenar=Fecha");
+}
+
 public /*...content...*/
