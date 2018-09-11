@@ -1,0 +1,1 @@
+Clase 4 de PHP en el curso Blend de Digital House. El tema es procesamiento HTTP
