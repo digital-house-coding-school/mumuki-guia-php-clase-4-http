@@ -5,8 +5,8 @@ public function testBusquedaRemeras(): void {
   
   $resultado = $this->busqueda();
   $this->assertTrue(is_string($resultado), "La función busqueda no esta devolviendo un string...");
-  $resultado = strtolower($resultado);
-  $this->assertTrue($resultado == "el termino buscado es remeras", "La prueba falla al ingresar a http://digitalcommerce.com/buscador.php?busqueda=Remeras. Se esperaba 'El termino buscado es Remeras' y se recibió '$resultado'");
+  $resultadoF = strtolower($resultado);
+  $this->assertTrue($resultadoF == "el termino buscado es remeras", "La prueba falla al ingresar a http://digitalcommerce.com/buscador.php?busqueda=Remeras. Se esperaba 'El termino buscado es Remeras' y se recibió '$resultado'");
 }
 
 public function testBusquedaPantalones(): void {
@@ -16,8 +16,8 @@ public function testBusquedaPantalones(): void {
   
   $resultado = $this->busqueda();
   $this->assertTrue(is_string($resultado), "La función busqueda no esta devolviendo un string...");
-  $resultado = strtolower($resultado);
-  $this->assertTrue($resultado == "el termino buscado es pantalones", "La prueba falla al ingresar a http://digitalcommerce.com/buscador.php?busqueda=Pantalones. Se esperaba 'El termino buscado es Pantalones' y se recibió '$resultado'");
+  $resultadoF = strtolower($resultado);
+  $this->assertTrue($resultadoF == "el termino buscado es pantalones", "La prueba falla al ingresar a http://digitalcommerce.com/buscador.php?busqueda=Pantalones. Se esperaba 'El termino buscado es Pantalones' y se recibió '$resultado'");
 }
 
 public function testBusquedaPantalonesPorFecha(): void {
@@ -28,8 +28,8 @@ public function testBusquedaPantalonesPorFecha(): void {
   
   $resultado = $this->busqueda();
   $this->assertTrue(is_string($resultado), "La función busqueda no esta devolviendo un string...");
-  $resultado = strtolower($resultado);
-  $this->assertTrue($resultado == "el termino buscado es pantalones ordenado por fecha", "La prueba falla al ingresar a http://digitalcommerce.com/buscador.php?busqueda=Pantalones&ordenar=Fecha. Se esperaba 'El termino buscado es Pantalones ordenado por Fecha' y se recibió '$resultado'");
+  $resultadoF = strtolower($resultado);
+  $this->assertTrue($resultadoF == "el termino buscado es pantalones ordenado por fecha", "La prueba falla al ingresar a http://digitalcommerce.com/buscador.php?busqueda=Pantalones&ordenar=Fecha. Se esperaba 'El termino buscado es Pantalones ordenado por Fecha' y se recibió '$resultado'");
 }
 
 public function testBusquedaRemerasPorPuntuacion(): void {
@@ -40,8 +40,8 @@ public function testBusquedaRemerasPorPuntuacion(): void {
   
   $resultado = $this->busqueda();
   $this->assertTrue(is_string($resultado), "La función busqueda no esta devolviendo un string...");
-  $resultado = strtolower($resultado);
-  $this->assertTrue($resultado == "el termino buscado es remeras ordenado por puntuacion", "La prueba falla al ingresar a http://digitalcommerce.com/buscador.php?busqueda=Remeras&ordenar=Puntuacion. Se esperaba 'El termino buscado es Remeras ordenado por Puntuacion' y se recibió '$resultado'");
+  $resultadoF = strtolower($resultado);
+  $this->assertTrue($resultadoF == "el termino buscado es remeras ordenado por puntuacion", "La prueba falla al ingresar a http://digitalcommerce.com/buscador.php?busqueda=Remeras&ordenar=Puntuacion. Se esperaba 'El termino buscado es Remeras ordenado por Puntuacion' y se recibió '$resultado'");
 }
 
 public /*...content...*/
