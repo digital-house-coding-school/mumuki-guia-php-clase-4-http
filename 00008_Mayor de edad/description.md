@@ -1,10 +1,10 @@
-El formulario que nos llega viaja por POST y tiene un 
+El formulario que nos llega viaja por POST tiene un 
 
 ``` html
-<input type="text" name="username">
+<input type="text" name="edad">
 ```
 
-Tu tarea es completar la función `validarUsername` que se fije si el nombre de usuario tiene al menos 5 caracteres.
+Tu tarea es completar la función `validarEdad` que se fije si el valor enviado es un número entero y si es mayor a 18
 
-Podrías utilizar la función [strlen](http://php.net/manual/es/function.strlen.php)
+Podrías utilizar la función [is_integer](http://php.net/manual/es/function.is-integer.php)
 
