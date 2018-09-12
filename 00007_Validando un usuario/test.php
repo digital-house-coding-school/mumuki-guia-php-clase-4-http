@@ -1,4 +1,4 @@
-public function testUsernameCompleto(): void {
+public function testValidarUsername(): void {
   $_POST = [
     "username" => "dariosus",
   ];
