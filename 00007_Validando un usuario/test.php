@@ -19,14 +19,14 @@ public function testUsernameCompleto(): void {
   $this->assertTrue($resultado == false, 'La prueba falla con un $_POST["username"] vacío');
 
   $_POST = [
-    "username" => "sus",
+    "username" => "daro",
   ];
   
   $resultado = $this->validarUsername();
   $this->assertTrue(is_bool($resultado), "La función validarUsername no esta devolviendo un booleano...");
   
   
-  $this->assertTrue($resultado == false, 'La prueba falla con un $_POST["username"] = "sus"');
+  $this->assertTrue($resultado == false, 'La prueba falla con un $_POST["username"] = "daro"');
 }
 
 public /*...content...*/
