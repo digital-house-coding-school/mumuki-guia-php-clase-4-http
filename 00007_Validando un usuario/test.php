@@ -27,7 +27,7 @@ public function testUsernameCorto(): void {
   
   $resultado = $this->validarUsername();
   $this->assertTrue(is_bool($resultado), "La función validarUsername no esta devolviendo un booleano...");
-  
+  var_dump($_POST["username"],strlen($_POST["username"],$resultado);exit;
   $this->assertFalse($resultado, 'La prueba falla con un $_POST["username"] = "sus"');
 }
 
