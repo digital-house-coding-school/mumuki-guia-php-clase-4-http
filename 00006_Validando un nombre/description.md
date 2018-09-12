@@ -1,4 +1,4 @@
-El formulario que nos llega viaja por POST y tiene un 
+El formulario que nos llega viaja por POST tiene un 
 
 ``` html
 <input type="text" name="nombre">
