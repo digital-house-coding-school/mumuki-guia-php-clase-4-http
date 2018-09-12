@@ -11,4 +11,5 @@ Tu tarea es completar la función `validarPass` que se comporte del siguiente mo
 2. Si solamente falta el campo 'password' retornar el texto "La contraseña esta vacia"
 3. Si solamente falta el campo 'confirmar' retornar el texto "Falta la confirmacion de contraseña"
 4. Si los dos campos estan completos pero tienen valores distintos retornar el texto "Las contraseñas no verifican"
+5. Si todo esta bien, retornar el texto "Correcto"
 
