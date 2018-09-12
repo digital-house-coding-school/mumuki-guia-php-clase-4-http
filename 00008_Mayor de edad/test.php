@@ -7,7 +7,7 @@ public function testTexto(): void {
   
   $this->assertTrue(is_bool($resultado), "La función no esta retornando un booleano");
   
-  $this->assertFalase($resultado, "La función falla con el texto 'hola' como edad");
+  $this->assertFalse($resultado, "La función falla con el texto 'hola' como edad");
 }
 
 public function testMayorDeEdad(): void {
